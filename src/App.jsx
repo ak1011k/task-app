@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import TaskList from './components/TaskList';
 import TaskForm from './components/TaskForm';
+import bird from './images/bard.png';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -34,13 +35,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>進捗管理アプリ</h1>
+        <div>
+        <h1 className='App-name'>Task Management</h1>
+        <img  src={bird} className="App-logo" alt="logo" />
+        </div>
       </header>
       <div className="App-content">
         <TaskForm addTask={addTask} />
-        <input
+        <input className='name-search'
           type="text"
-          placeholder="担当者で検索"
+          placeholder="名前で検索"
           value={searchTerm}
           onChange={handleSearchChange}
         />

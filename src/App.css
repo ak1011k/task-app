@@ -19,9 +19,7 @@
 
   
   .App-header {
-  
     padding: 20px;
-    
     color: white;
   }
 
@@ -74,3 +72,29 @@
     color: red;
   }
   
+  .manager{
+    width: 100px;
+    border-radius: 10px;
+  }
+  .Task-input{
+    border-radius: 10px;
+  }
+  .date-input{
+    border-radius: 10px;
+    height: 15px;
+  }
+  .button{
+    border-radius: 10px;
+  }
+  .name-search{
+    border-radius: 10px;
+  }
+
+  .App-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .App-logo{
+    width: 100px;
+    height: 100px;
+  }
