@@ -1,11 +1,33 @@
 .App {
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgb(0, 77, 96),rgb(0, 216, 187));
+    margin: 0;
+    padding: 20px;
+    box-sizing: 500px;
   }
+
+  body {
+    margin: 0;
+    padding: 0; 
+  }
+
+
   
   .App-header {
-    background-color: #282c34;
+  
     padding: 20px;
+    
     color: white;
+  }
+
+  .Name{
+    color:white;
+    font-family: cursive;
   }
   
   form {
@@ -26,16 +48,17 @@
   ul {
     list-style: none;
     padding: 0;
+    
   }
   
   li {
     padding: 10px;
     margin: 10px 0;
-    background-color: #f4f4f4;
     border: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
   }
   
   li span {
@@ -45,5 +68,9 @@
   
   li button {
     margin-left: 10px;
+  }
+  
+  .due-soon span {
+    color: red;
   }
   
